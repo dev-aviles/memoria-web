@@ -1,0 +1,169 @@
+:root {
+  --bg: #0c0c0e;
+  --surface: #16161a;
+  --border: #26262c;
+  --text: #f2f1ee;
+  --text-secondary: #a3a3ab;
+  --text-tertiary: #6c6c74;
+  --accent: #ff6a3d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 28px 24px 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.brand svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+nav.pages {
+  display: flex;
+  gap: 18px;
+}
+
+nav.pages a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav.pages a:hover,
+nav.pages a:focus-visible {
+  color: var(--text);
+}
+
+nav.pages a.active {
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  margin: 20px 0 4px;
+}
+
+.updated {
+  color: var(--text-tertiary);
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+section.entry {
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+
+section.entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+section.entry h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+section.entry p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+a.inline {
+  color: var(--accent);
+}
+
+.contact-block {
+  margin-top: 8px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.contact-block h2 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.contact-block p {
+  margin: 0 0 4px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.contact-block a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-block a:hover,
+.contact-block a:focus-visible {
+  text-decoration: underline;
+}
+
+footer.site {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  header.site {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
