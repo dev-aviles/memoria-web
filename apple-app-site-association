@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["TEAMID.com.yourname.memoria"],
+        "appIDs": ["dev.aviles.Memoria"],
         "components": [
           { "/": "/collection/*" },
           { "/": "/c/*" },
