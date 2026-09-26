@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.yourname.memoria"],
+        "components": [
+          { "/": "/collection/*" },
+          { "/": "/c/*" },
+          { "/": "/community/*" },
+          { "/": "/u/*" },
+          { "/": "/p/*" }
+        ]
+      }
+    ]
+  }
+}
