@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memoria</title>
+<meta name="description" content="Open this in the Memoria app, or get the app on the App Store.">
+<link rel="stylesheet" href="style.css">
+<script>
+  // The exact path someone shared (e.g. /collection/abc123) maps
+  // directly onto the app's own memoria:// scheme — same shape,
+  // just a different prefix. The app itself doesn't route these yet
+  // (that's the separate Universal Links piece), but a person who
+  // already has Memoria installed and taps this link will still
+  // launch straight into the app via this scheme.
+  window.addEventListener("DOMContentLoaded", function () {
+    var path = window.location.pathname;
+    var appURL = "memoria:/" + path;
+    window.location.href = appURL;
+  });
+</script>
+</head>
+<body>
+
+<header class="site">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/></svg>
+    Memoria
+  </a>
+  <nav class="pages">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>Open in Memoria</h1>
+  <p class="updated">If the app didn't open automatically, you may not have it installed yet.</p>
+
+  <div class="contact-block">
+    <h2>Get Memoria</h2>
+    <p>Download Memoria from the App Store to view this content and start sharing your own photography.</p>
+    <p><a href="https://apps.apple.com/app/idYOUR_APP_ID">Download on the App Store</a></p>
+  </div>
+</main>
+
+<footer class="site">
+  © 2026 Memoria.
+</footer>
+
+</body>
+</html>
