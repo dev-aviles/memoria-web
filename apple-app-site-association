@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["dev.aviles.Memoria"],
+        "appIDs": ["GE5W5635U7.dev.aviles.Memoria"],
         "components": [
           { "/": "/collection/*" },
           { "/": "/c/*" },
